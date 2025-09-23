@@ -22,7 +22,7 @@ const Profile = () => {
           return;
         }
 
-        const res = await axios.get("http://localhost:8081/api/profile", {
+        const res = await axios.get("http://ec2-13-218-220-63.compute-1.amazonaws.com:8081/api/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
